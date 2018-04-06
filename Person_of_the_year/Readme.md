@@ -1,10 +1,10 @@
-## Person Of the Year
+# Person Of the Year #
 This Application allows user unput to search thru TIME PERSON OF THE YEAR database using years.
 
 ## Author:
 Tiger Hsu <br>
 
-# Parts of code were copied from# 
+## Parts of code were copied from ## 
 Amanada Iverson
 Phil Werner
 
