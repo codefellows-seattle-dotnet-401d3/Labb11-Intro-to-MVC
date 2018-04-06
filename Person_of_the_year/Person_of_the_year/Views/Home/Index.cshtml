@@ -1,17 +1,17 @@
-﻿@model 
+﻿<head>
+    <link href="#" rel="stylesheet" />
+</head>
 
-@{ }
+<h1> hello from the index home</h1>
 
-List<string>
+<form method="post">
 
+    <label for="StartYear">Start Year: </label>
+    <input maxlength="4" name="StartYear" />
 
+    <label for="EndYear">End Year: </label>
+    <input maxlength="4" name="EndYear" />
 
+    <button type="submit">Submit</button>
 
-*@foreach (var item in Model)
-{
-    <p>@item</p>
- }
-@{ 
-}
-
-<h1> hello from the index home<</h1>>
+</form>

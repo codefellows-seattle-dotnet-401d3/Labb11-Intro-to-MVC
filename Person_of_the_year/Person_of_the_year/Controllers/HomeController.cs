@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Person_of_the_year.Models;
 
 namespace Person_of_the_year.Controllers
 {
@@ -15,20 +16,26 @@ namespace Person_of_the_year.Controllers
     { //methods inside controllers are called actions
 
         [HttpGet]
-        
-        public ViewResult Index (int id)
+        public IActionResult Index()
         {
-            List<string> myList = new List<string>() { };
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(int startYear, int endYear)
+        {
+            return RedirectToAction("Results", new { startYear, endYear });
+        }
 
         /* This is a posting method takes in two arguments integers
         and redirects to the Results page */
-        [HttpPost]
-        public IActionResult Index(int StartYear, int EndYear)
+        public IActionResult Results(int startYear, int endYear)
         {
-            return RedirectToAction("Results", new { StartYear, EndYear });
+            ViewData["Message"] = "Here are your Person(s) of the Year";
+
+            TimePerson people = new TimePerson();
+
+            return View(people.GetPersons(startYear, endYear));
         }
 
         

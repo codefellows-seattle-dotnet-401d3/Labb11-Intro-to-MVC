@@ -24,7 +24,7 @@ namespace Person_of_the_year.Models
         public string Context { get; set; }
 
 
-        public List<TimePerson> GetPersons(int begYear, int endYear)
+        public List<TimePerson> GetPersons(int StartYear, int EndYear)
         {
             List<TimePerson> people = new List<TimePerson>();
             string path = Environment.CurrentDirectory;
@@ -48,7 +48,8 @@ namespace Person_of_the_year.Models
                 });
             }
 
-            List<TimePerson> listofPeople = people.Where(p => (p.Year >= begYear) && (p.Year <= endYear)).ToList();
+            //Lambda expression for pending people
+            List<TimePerson> listofPeople = people.Where(p => (p.Year >= StartYear) && (p.Year <= EndYear)).ToList();
             return listofPeople;
         }
 

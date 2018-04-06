@@ -40,7 +40,7 @@ namespace Person_of_the_year
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("HI");
+                await context.Response.WriteAsync("Press Return and enter a year");
             });
         }
     }
