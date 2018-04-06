@@ -26,17 +26,28 @@ namespace Person_of_the_year.Models
         //This creates a generics collection
         public List<TimePerson> GetPersons(int StartYear, int EndYear)
         {
+              /* Portions of this code were copied from Amanda Iverson */
+
 
             List<TimePerson> people = new List<TimePerson>();
 
             //Creating a sting of path and redirects to root directory
             string path = Environment.CurrentDirectory;
+            //SETTING THE NEW PATH TO TAKE IN TWO ARGUMENTS THE PATH AND THE ROOT DIRECTORY TO BUILD NEW PATH
+        
             string newPath = Path.GetFullPath(Path.Combine(path, @"wwwroot\personOfTheYear.csv"));
+
+            
+            //CREATES AN ARRAY THAT CALLS THE READ ALL FILE LINE ON NEW PATH
             string[] myFile = File.ReadAllLines(newPath);
 
+
+            //For loop which iterates thru the entire file seperating them into bits
             for (int i = 1; i < myFile.Length; i++)
             {
+                //using split method on file
                 string[] fields = myFile[i].Split(',');
+                // after iterating thru each index adds a person from the constructor function
                 people.Add(new TimePerson
                 {
                     Year = Convert.ToInt32(fields[0]),

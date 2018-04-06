@@ -38,6 +38,7 @@ namespace Person_of_the_year
              });
              
 
+            //This is a response method of some sort
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Press Return and enter a year");
