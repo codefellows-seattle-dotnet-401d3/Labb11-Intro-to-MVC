@@ -4,7 +4,7 @@ This Application allows user unput to search thru TIME PERSON OF THE YEAR databa
 ## Author:
 Tiger Hsu <br>
 
-## Parts of code were copied from ## 
+## Parts of code were copied from
 Amanada Iverson
 Phil Werner
 
