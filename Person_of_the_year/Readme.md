@@ -1,7 +1,7 @@
 ## Project Name
 
 ## Author:
-Tiger Hsu1
+Tiger Hsu
 
 ## Version:
 1.0.0 
