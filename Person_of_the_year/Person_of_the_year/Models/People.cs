@@ -23,10 +23,13 @@ namespace Person_of_the_year.Models
         public string Category { get; set; }
         public string Context { get; set; }
 
-
+        //This creates a generics collection
         public List<TimePerson> GetPersons(int StartYear, int EndYear)
         {
+
             List<TimePerson> people = new List<TimePerson>();
+
+            //Creating a sting of path and redirects to root directory
             string path = Environment.CurrentDirectory;
             string newPath = Path.GetFullPath(Path.Combine(path, @"wwwroot\personOfTheYear.csv"));
             string[] myFile = File.ReadAllLines(newPath);
