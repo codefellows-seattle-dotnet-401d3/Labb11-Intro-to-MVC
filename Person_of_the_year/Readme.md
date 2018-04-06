@@ -8,13 +8,12 @@ Tiger Hsu <br>
 Amanada Iverson
 Phil Werner
 
-
 ## Version:
 1.0.0 
 
 ## Overview
-This is my first exposure to the .NET frame work using C#, This is an application that allows for 
-a user to search dates by using the MVC model.
+This is my first exposure to the .NET frame work using C#, This is an application that allows for
+a user to search dates by using the MVC model. Model is an object construtor which we had been given an CSV file and created an array with it. Controller which takes in a user form id / input and has the GET POST methods attached to them, decides where to directs to the view page. The View page only has two Razor pages one for input and one for results page.
 
 ## Getting Started
 - Fork this repo / or clone this repo
@@ -52,4 +51,4 @@ MIT License
 
 ## Change Log
 
-01-01-2001 4:59pm 
+04-06-2018 4:59pm 
