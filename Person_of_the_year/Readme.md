@@ -19,9 +19,10 @@ nd the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's y
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/Person_of_the_year/Time_Person.JPG)
+![alt text](/Person_of_the_year/Time_Example.JPG)
 
-<!-- Show them what looks like and how how to use the application.  -->
+
 
 ## Architecture
 This  Program uses C# and the .NET Core 2.0 platform
