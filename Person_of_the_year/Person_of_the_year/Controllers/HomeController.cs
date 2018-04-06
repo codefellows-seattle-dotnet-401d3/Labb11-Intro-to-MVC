@@ -14,8 +14,8 @@ namespace Person_of_the_year.Controllers
         
         public ViewResult Index (int id)
         {
-            string name = "Tiger";
-            return View(name);
+            List<string> myList = new List<string>() { };
+            return View();
         }
         
     }
