@@ -1,28 +1,25 @@
 ﻿@model List<Person_of_the_year.Models.TimePerson>
-    
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-   <head>
-       <link href="~/StyleSheet.css" rel="stylesheet" />
-   </head>
-    <h1> TIME</h1>
-    <p>Person Of the Year</p>
+<head>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
 
-    <table>
-        <tr>
-            <td>Name</td>
-            <td>Honor</td>
-            <td>Country</td>
-            <td>Birth Year</td>
-            <td>Death Year</td>
-            <td>Title</td>
-            <td>Category</td>
-            <td>Context</td>
-            <td>Year</td>
-        </tr>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Honor</td>
+        <td>Country</td>
+        <td>Birth Year</td>
+        <td>Death Year</td>
+        <td>Title</td>
+        <td>Category</td>
+        <td>Context</td>
+        <td>Year</td>
+    </tr>
 
-        @foreach (var person in Model)
+    @foreach (var person in Model)
     {
-
         <tr>
             <td>@person.Name</td>
             <td>@person.Honor</td>
@@ -34,8 +31,8 @@
             <td>@person.Context</td>
             <td>@person.Year</td>
         </tr>
-}
+    }
 
-    </table>
+</table>
 
 
