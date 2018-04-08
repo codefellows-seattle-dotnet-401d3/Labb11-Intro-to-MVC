@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- This is not linking to style page-->
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+
+    <!--<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        -->
+
+    <style>
+        body {
+            text-align:center;
+            border-style: solid;
+            border-width: 10px;
+            border-color: red;
+        }
+
+        h1 {
+            margin-top:25px;
+            margin-bottom: 5px;
+        }
+
+        #input {
+            font:bold;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+  
+        <h1> TIME</h1>
+        <h2>Person Of the Year</h2>
+   
+
+    <div>
+        <!--this is where the razor views are stuck -->
+        @RenderBody()
+    </div>
+
+
+    <!--Loading the scripts tag for the Jquery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+    </script>
+
+</body>
+</html>
