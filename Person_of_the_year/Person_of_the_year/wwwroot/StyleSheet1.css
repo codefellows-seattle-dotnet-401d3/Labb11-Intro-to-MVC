@@ -1,3 +1,7 @@
-﻿body {
-    background-color:deeppink;
+﻿* {
+    background-color: deeppink !important;
+}
+
+body {
+    background-color: pink;
 }
