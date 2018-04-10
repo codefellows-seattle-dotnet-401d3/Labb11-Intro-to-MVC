@@ -16,7 +16,7 @@ namespace Person_of_the_year
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddMvc();
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,13 +36,15 @@ namespace Person_of_the_year
                     template: "{controller=Home}/{action=Index}/{id?}"
                     );
              });
-             
+
+            app.UseStaticFiles();
 
             //This is a response method of some sort
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Press Return and enter a year");
             });
+
         }
     }
 }
