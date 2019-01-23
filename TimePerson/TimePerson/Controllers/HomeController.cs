@@ -27,7 +27,7 @@ namespace TimePerson.Controllers
 
             People people = new People();
 
-            return View(people.GetThePeople(startYear, endYear));
+            return View(People.GetThePeople(startYear, endYear));
         }
     }
 }

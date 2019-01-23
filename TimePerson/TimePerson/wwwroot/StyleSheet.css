@@ -23,12 +23,14 @@ form {
 }
 
 table {
+    width: 80%;
     border-collapse: collapse;
     border: solid 2px red;
     margin: 20px auto;
 }
 
 td{
+    height: 40px;
     border: solid 1px red;
     text-align: center;
 }

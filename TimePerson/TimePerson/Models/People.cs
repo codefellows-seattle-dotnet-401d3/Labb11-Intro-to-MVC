@@ -29,7 +29,7 @@ namespace TimePerson.Models
             // Declaring sneakyPath as a string and setting it to the full path to the personOfTheYear.csv file
             // .Combine is concatinating thePath and the other string into one string, GetFullPath returns the
             // path of that combination
-            string sneakyPath = Path.GetFullPath(Path.Combine(thePath, @"wwwroot\personOfTheYear.csv"));
+            string sneakyPath = Path.GetFullPath(Path.Combine(thePath, @"wwwroot/personOfTheYear.csv"));
 
             // Declaring a peopleFile as a string array and putting all the data from the csv file into it
             string[] peopleFile = File.ReadAllLines(sneakyPath);
